@@ -33,6 +33,8 @@ namespace GenericsIntro
             myDictionary.Add(99, "DoksanDokuz");
             int adet = myDictionary.Count;
             Console.WriteLine(adet);
+
+            myDictionary.List();
            
 
         }
