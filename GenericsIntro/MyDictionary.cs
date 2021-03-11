@@ -6,13 +6,14 @@ namespace GenericsIntro
     {
 
         Key[] keyArray;  Value[] valArray;
-
         Key[] tempKey;   Value[] tempValue;
+
         public MyDictionary()
         {
             keyArray = new Key[0];
             valArray = new Value[0];
         }
+
         public void Add(Key k, Value v)
         {
             tempKey = keyArray;  tempValue = valArray; // Gerçek dizilerimizin referanslarını tempKey ve tempValue isimli dizilerde tuttuk.
@@ -31,7 +32,6 @@ namespace GenericsIntro
                 valArray[i] = tempValue[i];   
             }
             valArray[valArray.Length - 1] = v;
-
         }
 
         public int Count => keyArray.Length; // Class'ımıza Count özelliği ekledik. Tek satırlık get metodunun yerine alternatif yazım kullandık. 
