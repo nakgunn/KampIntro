@@ -29,7 +29,7 @@ namespace GenericsIntro
 
             for (int i = 0; i < tempValue.Length; i++)
             {
-                valArray[i] = tempValue[i];   
+                valArray[i] = tempValue[i];    
             }
             valArray[valArray.Length - 1] = v;
         }
